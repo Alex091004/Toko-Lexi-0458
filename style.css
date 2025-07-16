@@ -1,0 +1,184 @@
+/* Utilitas Tambahan */
+.text-center { text-align: center; }
+.text-danger { color: #dc3545; }
+.text-success { color: var(--success); }
+.mt-3 { margin-top: var(--space-md); }
+.mb-3 { margin-bottom: var(--space-md); }
+.mt-5 { margin-top: var(--space-xl); }
+.mb-5 { margin-bottom: var(--space-xl); }
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary);
+    padding: var(--space-sm) var(--space-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 var(--space-sm);
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: var(--accent);
+}
+
+/* Auth Forms (login & register) */
+.auth-container {
+    max-width: 400px;
+    margin: var(--space-xl) auto;
+    padding: var(--space-xl);
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: var(--space-lg);
+}
+
+.auth-container form .form-group {
+    margin-bottom: var(--space-md);
+}
+
+.auth-container input {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--light-gray);
+    border-radius: var(--radius-sm);
+}
+
+/* Keranjang */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md);
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: var(--space-md);
+    border-radius: var(--radius-sm);
+}
+
+/* Checkout */
+.checkout-summary {
+    border: 1px solid var(--light-gray);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    background-color: var(--light);
+    margin-top: var(--space-lg);
+}
+
+.checkout-summary h4 {
+    color: var(--primary);
+    margin-bottom: var(--space-md);
+}
+
+/* Owner/Admin Dashboard */
+.admin-panel {
+    background-color: #fff;
+    box-shadow: var(--shadow-md);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    margin-top: var(--space-xl);
+}
+
+.admin-panel h2 {
+    text-align: left;
+    font-size: 1.75rem;
+    margin-bottom: var(--space-lg);
+}
+
+.admin-actions {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.admin-actions .btn {
+    width: auto;
+}
+
+/* Table Management */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: var(--space-lg);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: var(--space-md);
+    border: 1px solid var(--light-gray);
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* File Upload Preview */
+.image-preview {
+    max-width: 150px;
+    margin-top: var(--space-sm);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--light-gray);
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 4px solid var(--light-gray);
+    border-top: 4px solid var(--primary);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
